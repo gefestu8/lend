@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визуальный Сторителлинг: Один День с AI-Ассистентом "Майя"</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030712;
+            color: #F9FAFB;
+        }
+        .scenario-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 1rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scenario-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #A78BFA, #FBBF24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .mockup {
+            background-color: #1F2937;
+            border: 1px solid #374151;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        .mockup-header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #374151;
+        }
+        .mockup-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(to right, #818CF8, #C084FC);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+        .mockup-message {
+            background-color: #374151;
+            border-radius: 0.75rem;
+            padding: 0.75rem 1rem;
+            margin-top: 1rem;
+            max-width: 80%;
+        }
+        .mockup-button {
+            background-color: #4F46E5;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            border: none;
+            font-weight: 500;
+        }
+        .mockup-button:hover {
+            background-color: #4338CA;
+        }
+        .icon-card {
+            background-color: rgba(31, 41, 55, 0.8);
+            border: 1px solid #4B5563;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <div class="min-h-screen flex flex-col items-center justify-center text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+            Один День с <span class="gradient-text">AI-Ассистентом "Майя"</span>
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg md:text-xl text-slate-400">
+            Как незаменимый партнер возвращает руководителю его самое ценное — время и фокус.
+        </p>
+        <div class="mt-12 text-slate-500 animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Scenario 1 -->
+    <section class="scenario-section" id="scenario-1">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="md:pr-12">
+                <h2 class="text-3xl font-bold tracking-tight">Сценарий 1: Пробуждение Ассистента</h2>
+                <p class="mt-4 text-lg text-slate-400"><strong class="text-slate-200">Проблема:</strong> Стандартные ассистенты безличны и не вызывают доверия. Они "слушают всех", и непонятно, кто ими управляет. Это создает психологический барьер для обсуждения конфиденциальной информации.</p>
+                <div class="mt-8 p-6 rounded-lg bg-slate-800/50 border border-slate-700">
+                    <h3 class="font-semibold text-white">Бизнес-ценность:</h3>
+                    <ul class="mt-2 list-disc list-inside text-slate-300 space-y-2">
+                        <li><strong class="text-white">Аутентификация и Доверие:</strong> Ассистент узнает владельца по голосу, подтверждая, что только он может отдавать ключевые команды.</li>
+                        <li><strong class="text-white">Фундамент безопасности:</strong> Создание ощущения личного и защищенного инструмента, снимающего барьер для работы с чувствительными данными.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mockup">
+                 <div class="flex flex-col items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
+                    <p class="mt-4 text-slate-300">Юрий говорит:</p>
+                    <p class="text-xl font-semibold text-white mt-1">"Майя, привет."</p>
+                    <div class="my-6 w-full border-t border-dashed border-slate-600"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                    <p class="mt-4 text-slate-300">Майя (голосом):</p>
+                    <p class="text-xl font-semibold text-white mt-1">"Привет, Юрий. Я готова к работе."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scenario 2 -->
+    <section class="scenario-section" id="scenario-2">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+             <div class="mockup">
+                <p class="text-center text-slate-300 mb-4">Юрий дает команду:</p>
+                <div class="bg-slate-900 p-4 rounded-lg text-center">
+                    <p class="text-lg font-semibold text-white">"Начни встречу. На встрече будет три человека: я, Стас и Гена."</p>
+                </div>
+                <div class="mt-6 flex justify-around">
+                    <div class="icon-card">
+                        <div class="text-4xl">👤</div>
+                        <p class="mt-2 font-semibold">Юрий</p>
+                    </div>
+                    <div class="icon-card">
+                        <div class="text-4xl">👤</div>
+                        <p class="mt-2 font-semibold">Стас</p>
+                    </div>
+                    <div class="icon-card">
+                        <div class="text-4xl">👤</div>
+                        <p class="mt-2 font-semibold">Гена</p>
+                    </div>
+                </div>
+                <div class="mt-6 bg-red-500/10 border border-red-500/30 text-red-300 p-3 rounded-lg flex items-center justify-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="10" /></svg>
+                    <span class="font-semibold">ЗАПИСЬ АКТИВИРОВАНА</span>
+                </div>
+            </div>
+            <div class="md:pl-12">
+                <h2 class="text-3xl font-bold tracking-tight">Сценарий 2: Начало Встречи</h2>
+                <p class="mt-4 text-lg text-slate-400"><strong class="text-slate-200">Проблема:</strong> Начало встречи — это хаос. Нужно вручную запускать запись, фиксировать участников и отвлекаться на организационные моменты.</p>
+                <div class="mt-8 p-6 rounded-lg bg-slate-800/50 border border-slate-700">
+                    <h3 class="font-semibold text-white">Бизнес-ценность:</h3>
+                    <ul class="mt-2 list-disc list-inside text-slate-300 space-y-2">
+                        <li><strong class="text-white">Нулевое трение:</strong> Запуск сложного процесса протоколирования одной естественной фразой.</li>
+                        <li><strong class="text-white">Предварительная загрузка контекста:</strong> Система заранее знает, кого ожидать, что критично для точной идентификации.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scenario 3 -->
+    <section class="scenario-section" id="scenario-3">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="md:pr-12">
+                <h2 class="text-3xl font-bold tracking-tight">Сценарий 3: "Умное" Саммари</h2>
+                <p class="mt-4 text-lg text-slate-400"><strong class="text-slate-200">Проблема:</strong> Обычное саммари — это сухой пересказ текста, оторванный от бизнес-контекста. Он не отвечает на главный вопрос: "И что?".</p>
+                <div class="mt-8 p-6 rounded-lg bg-slate-800/50 border border-slate-700">
+                    <h3 class="font-semibold text-white">Бизнес-ценность:</h3>
+                    <ul class="mt-2 list-disc list-inside text-slate-300 space-y-2">
+                        <li><strong class="text-white">Синергия данных:</strong> Превращение разрозненной информации (встреча + Wiki) в единое, действенное знание.</li>
+                        <li><strong class="text-white">Принятие взвешенных решений:</strong> Мгновенное понимание приоритетов и рисков для быстрых и точных действий.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mockup">
+                <div class="mockup-header">
+                    <div class="mockup-avatar">М</div>
+                    <div class="ml-3">
+                        <p class="font-semibold text-white">Майя</p>
+                        <p class="text-sm text-slate-400">Новое саммари</p>
+                    </div>
+                </div>
+                <div class="mt-4 space-y-2">
+                    <p class="font-bold text-white">Тема: Синхронизация по проекту "Омега"</p>
+                    <p class="font-semibold text-purple-300">Ключевые решения:</p>
+                    <ul class="list-disc list-inside text-slate-300 pl-2">
+                        <li>Утвердили новый дизайн-макет.</li>
+                    </ul>
+                    <p class="font-semibold text-purple-300 pt-2">Задачи:</p>
+                    <ul class="list-disc list-inside text-slate-300 pl-2 space-y-3">
+                        <li><strong class="text-slate-100">[speaker_1]:</strong> Подготовить презентацию для инвесторов к пятнице.
+                            <div class="mt-1 ml-4 p-2 bg-yellow-500/10 border border-yellow-500/20 text-yellow-300 rounded-md text-sm">⚠️ **Контекст из Wiki:** Эта задача является блокирующей для следующего раунда финансирования.</div>
+                        </li>
+                        <li><strong class="text-slate-100">[speaker_2]:</strong> Проанализировать метрики за прошлый квартал.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scenario 4 -->
+    <section class="scenario-section" id="scenario-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="mockup">
+                <div class="mockup-header">
+                    <div class="mockup-avatar">М</div>
+                    <div class="ml-3">
+                        <p class="font-semibold text-white">Майя</p>
+                        <p class="text-sm text-slate-400">Требуется идентификация</p>
+                    </div>
+                </div>
+                <div class="mockup-message self-start">
+                    <p>На встрече были два новых голоса. Помогите мне понять, кто есть кто, на основе того, что они говорили.</p>
+                </div>
+                <div class="mt-4 p-4 border border-slate-700 rounded-lg space-y-4">
+                    <div>
+                        <p class="font-semibold text-purple-300">Спикер 1 (говорил о...)</p>
+                        <p class="text-sm text-slate-300 italic mt-1">"...предлагаю пересмотреть бюджет, так как текущие расчеты не учитывают стоимость нового оборудования..."</p>
+                        <div class="mt-3 flex gap-2">
+                            <button class="mockup-button text-sm flex-1">Это Стас</button>
+                            <button class="mockup-button text-sm flex-1">Это Гена</button>
+                        </div>
+                    </div>
+                    <hr class="border-slate-700">
+                    <div>
+                        <p class="font-semibold text-purple-300">Спикер 2 (говорил о...)</p>
+                        <p class="text-sm text-slate-300 italic mt-1">"...я могу подготовить новый дизайн-макет к концу недели, если мы согласуем референсы сегодня..."</p>
+                        <div class="mt-3 flex gap-2">
+                            <button class="mockup-button text-sm flex-1">Это Стас</button>
+                            <button class="mockup-button text-sm flex-1">Это Гена</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:pl-12">
+                <h2 class="text-3xl font-bold tracking-tight">Сценарий 4: Идентификация по Контексту</h2>
+                <p class="mt-4 text-lg text-slate-400"><strong class="text-slate-200">Проблема:</strong> Прослушивать аудио-фрагменты для идентификации неудобно. Гораздо проще понять, кто говорил, по сути его высказываний.</p>
+                <div class="mt-8 p-6 rounded-lg bg-slate-800/50 border border-slate-700">
+                    <h3 class="font-semibold text-white">Бизнес-ценность:</h3>
+                    <ul class="mt-2 list-disc list-inside text-slate-300 space-y-2">
+                        <li><strong class="text-white">Идентификация по смыслу:</strong> Пользователь принимает решение на основе контекста, что быстрее и надежнее, чем распознавание голоса на слух.</li>
+                        <li><strong class="text-white">Самообучающаяся система:</strong> Каждое подтверждение делает ассистента умнее, снижая необходимость в ручном вмешательстве в будущем.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Scenario 5 -->
+    <section class="scenario-section" id="scenario-5">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="md:pr-12">
+                <h2 class="text-3xl font-bold tracking-tight">Сценарий 5: Персонализация СамМари</h2>
+                <p class="mt-4 text-lg text-slate-400"><strong class="text-slate-200">Проблема:</strong> Универсальное саммари никогда не будет идеальным для всех. У каждого руководителя свой стиль и приоритеты.</p>
+                <div class="mt-8 p-6 rounded-lg bg-slate-800/50 border border-slate-700">
+                    <h3 class="font-semibold text-white">Бизнес-ценность:</h3>
+                    <ul class="mt-2 list-disc list-inside text-slate-300 space-y-2">
+                        <li><strong class="text-white">Адаптивный продукт:</strong> Ассистент подстраивается под ментальную модель пользователя, а не наоборот.</li>
+                        <li><strong class="text-white">Рост лояльности:</strong> Пользователь чувствует, что его "слышат", и "тренирует" своего личного помощника.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mockup">
+                <div class="mockup-message self-start w-full">
+                    <p>Саммари готово. <span class="text-slate-400">[...]</span></p>
+                </div>
+                <div class="flex justify-end mt-2">
+                     <button class="mockup-button">🔄 Переделать саммари</button>
+                </div>
+                <div class="mockup-message self-start mt-4">
+                    <p>Что мне следует изменить или на чем сфокусироваться?</p>
+                </div>
+                <div class="mockup-message self-end bg-indigo-600 mt-2">
+                    <p>Сделай больший акцент на задачах и конкретных сроках. Убери общие рассуждения.</p>
+                </div>
+                 <div class="mockup-message self-start mt-4">
+                    <p>Поняла. Обновляю ваш профиль предпочтений. Вот новое саммари: <span class="text-slate-400">[...]</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scenario 6 -->
+    <section class="scenario-section" id="scenario-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+             <div class="mockup">
+                <div class="mockup-header">
+                    <div class="mockup-avatar">М</div>
+                    <div class="ml-3">
+                        <p class="font-semibold text-white">Майя</p>
+                        <p class="text-sm text-slate-400">Проактивное действие</p>
+                    </div>
+                </div>
+                <div class="mockup-message self-start">
+                    <p>Я заметила, в ходе встречи вы договорились со Стасом обсудить метрики на отдельном созвоне. Хотите, я подготовлю черновик письма для вашего ассистента, чтобы он назначил встречу?</p>
+                </div>
+                <div class="mt-4 flex gap-4">
+                    <button class="mockup-button flex-1 bg-green-600 hover:bg-green-700">✅ Да, подготовить</button>
+                    <button class="mockup-button flex-1 bg-slate-600 hover:bg-slate-700">❌ Нет, спасибо</button>
+                 </div>
+            </div>
+            <div class="md:pl-12">
+                <h2 class="text-3xl font-bold tracking-tight">Сценарий 6: От Обсуждения к Действию</h2>
+                <p class="mt-4 text-lg text-slate-400"><strong class="text-slate-200">Проблема:</strong> Договоренности, озвученные на встрече, часто "зависают в воздухе", теряя импульс из-за необходимости ручных действий.</p>
+                <div class="mt-8 p-6 rounded-lg bg-slate-800/50 border border-slate-700">
+                    <h3 class="font-semibold text-white">Бизнес-ценность:</h3>
+                    <ul class="mt-2 list-disc list-inside text-slate-300 space-y-2">
+                        <li><strong class="text-white">Сокращение цикла "Слово-Дело":</strong> Система инициирует следующий шаг, ускоряя бизнес-процессы.</li>
+                        <li><strong class="text-white">Проактивная помощь:</strong> Ассистент предугадывает потребности, предлагая помощь, а не просто ожидая команды.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scenario 7 -->
+    <section class="scenario-section" id="scenario-7">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="md:pr-12">
+                <h2 class="text-3xl font-bold tracking-tight">Сценарий 7: Диалог с Памятью</h2>
+                <p class="mt-4 text-lg text-slate-400"><strong class="text-slate-200">Проблема:</strong> Вспомнить конкретную деталь или аргумент из встречи недельной давности практически невозможно без долгого поиска.</p>
+                <div class="mt-8 p-6 rounded-lg bg-slate-800/50 border border-slate-700">
+                    <h3 class="font-semibold text-white">Бизнес-ценность:</h3>
+                    <ul class="mt-2 list-disc list-inside text-slate-300 space-y-2">
+                        <li><strong class="text-white">Мгновенный доступ к знаниям:</strong> Вся информация из десятков часов встреч доступна по одному голосовому запросу.</li>
+                        <li><strong class="text-white">"Второй мозг":</strong> Ассистент становится надежной внешней памятью, освобождая когнитивные ресурсы руководителя.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mockup">
+                <div class="mockup-message self-end bg-indigo-600">
+                    <p>Майя, какой главный аргумент приводил Гена против нашего предложения?</p>
+                </div>
+                 <div class="mockup-message self-start">
+                    <p class="text-sm text-slate-400">Анализирую транскрипцию встречи...</p>
+                    <div class="mt-2 text-xs text-slate-500">
+                        <p>1. Гибридный поиск (по смыслу + по ключевым словам "Гена", "аргумент", "против").</p>
+                        <p>2. Синтез ответа из найденных фрагментов.</p>
+                    </div>
+                </div>
+                <div class="mockup-message self-start">
+                    <p>Гена утверждал, что предложенный бюджет на 30% ниже необходимого для закупки нового оборудования.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.scenario-section');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                rootMargin: '0px',
+                threshold: 0.2
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
